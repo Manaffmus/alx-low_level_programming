@@ -1,1 +1,1 @@
-readme file
+pointers, arrays, strings
