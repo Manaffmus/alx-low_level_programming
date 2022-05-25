@@ -13,33 +13,33 @@
  *     **/
 
 size_t print_list(const list_t *h)
-
+	
 {
 
-		size_t cont = 0;
+	size_t cont = 0;
 
 
 
-			while (h)
+	while (h)
 
-					{
+	{
+	
+			if (h->str)
+	
+				printf("[%u] %s\n", h->len, h->str);
+	
+			else
+	
+				printf("[0] (nil)\n");
+	
+			cont++;
+	
+			h = h->next;
+	
+		}
 
-								if (h->str)
-
-												printf("[%u] %s\n", h->len, h->str);
-
-										else
-
-														printf("[0] (nil)\n");
-
-												cont++;
-
-														h = h->next;
-
-															}
 
 
-
-				return (cont);
+	return (cont);
 
 }
